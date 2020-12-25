@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+$background-color: #a395f0;
+$container-background-color: #7b68ee;
+$text-color: #0f0f0f;
+$hover-background-color-button: #0f0f0f;
+$hover-color-button: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: mediumslateblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: $background-color;
+  border-radius: 5px;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1rem;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 5px;
+    border: black;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: "Oswald";
+  font-size: 1rem;
+  color: $text-color;
+  background-color: $container-background-color;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  background-color: $hover-background-color-button;
+  color: $hover-color-button;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
